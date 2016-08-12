@@ -1,0 +1,98 @@
+{{ define "pageHeader" }}<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="apple-touch-icon" sizes="57x57" href="/public/images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/public/images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/public/images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/public/images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/public/images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/public/images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/public/images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/public/images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/public/images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="96x96" href="/public/images/favicon-96x96.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon-16x16.png?v=4">
+	<link rel="shortcut icon" href="/public/images/favicon.ico?v=4">
+	<link rel="manifest" href="/public/images/manifest.json">
+	<meta name="msapplication-TileColor" content="#cfc8b8">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#cfc8b8">
+
+	<title>{{ .PageTitle }}</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="../../assets/js/html5shiv.js"></script>
+	<script src="../../assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+	<!--<![endif]-->
+</head>
+
+<body>
+<div class="bodyContainer" id="layout">
+	<a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+
+	<div id="menu">
+		<nav class="pure-menu pure-menu-open">
+			<ul>
+				<!-- <li><a href="/help">Help</a></li> -->
+				<!-- <li><a href="/">Sign In</a></li> -->
+				<p></p>
+			</ul>
+			<a class="pure-menu-heading" href="/">Home</a>
+			<ul>
+				<!-- <li><a href="/">Whatever</a></li> -->
+				<!-- <li><a href="/">About</a></li> -->
+			</ul>
+		</nav>
+	</div>
+
+	<main id="main" class="mainContent">
+		<header class="header">
+			<a href="/">
+            	<img class="pure-img-responsive" src="/public/images/juice_site_logo.jpg" />
+        	</a>
+        </header>				
+		{{ end }}
+
+
+		{{ define "pageFooterTop" }}
+	</main>
+	<footer class="footer">
+	<div class="footerContent">
+		<a href="#" class="copyr">&copy;Cogciprocate Productions</a>
+	</div>
+</footer>
+
+</div>
+{{ end }}
+
+
+{{ define "pageFooterBottom" }}
+<script src="/assets/js/toggle.js"></script>
+
+</body>
+</html>
+<!-- Maybe use this later when I inline some CSS
+<noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
+<noscript><link rel="stylesheet" href="/assets/vendor/pure-min.css"></noscript>
+-->
+{{ end }}
